@@ -58,3 +58,8 @@ popup.querySelector(".accept").style.padding = "14px";
 popup.querySelector(".accept").style.fontSize = "16px";
 popup.querySelector(".accept").style.color = "white";
 popup.querySelector(".accept").style.boxShadow = "0px 6px 18px -5px rgba(237, 103, 85, 1)";
+
+// Gán sự kiện click cho nút đóng
+popup.querySelector(".close").addEventListener("click", function () {
+    popup.style.display = "none"
+})
