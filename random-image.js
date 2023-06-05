@@ -1,63 +1,60 @@
-// Tạo các phần tử DOM
-const container = document.createElement("div");
-container.className = "container";
+// Tạo phần tử div cho popup
+let popup = document.createElement("div");
 
-const popup = document.createElement("div");
-popup.className = "popup";
+// Thêm nội dung và thuộc tính CSS vào phần tử div
+popup.innerHTML = `
+  <div class="container">
+    <div class="cookiesContent" id="cookiesPopup">
+      <button class="close">✖</button>
+      <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" />
+      <p>We use cookies for improving user experience, analytics and marketing.</p>
+      <button class="accept">That's fine!</button>
+    </div>
+  </div>
+`;
 
-const popupContent = document.createElement("div");
-popupContent.className = "popup-content";
-
-const popupTitle = document.createElement("h2");
-popupTitle.className = "popup-title";
-popupTitle.textContent = "Awesome!";
-
-const popupBody = document.createElement("p");
-popupBody.className = "popup-body";
-popupBody.textContent =
-  "You just found my pastel gradient button.\nNow, let's see what else it does. :P";
-
-// Gắn các phần tử vào DOM
-popupContent.appendChild(popupTitle);
-popupContent.appendChild(popupBody);
-popup.appendChild(popupContent);
-container.appendChild(popup);
-document.body.appendChild(container);
+// Gắn popup vào body của trang
+document.body.appendChild(popup);
 
 // Áp dụng CSS bằng JavaScript
-container.style.display = "flex";
-container.style.webkitDisplay = "box";
-container.style.mozDisplay = "box";
-container.style.msDisplay = "flexbox";
-container.style.webkitDisplay = "flex";
-container.style.flexWrap = "wrap";
-container.style.justifyContent = "center";
-container.style.alignContent = "center";
-container.style.padding = "6%";
-container.style.margin = "0";
+popup.querySelector(".container").style.fontFamily = "Roboto, sans-serif";
+popup.querySelector(".container").style.padding = "0";
+popup.querySelector(".container").style.margin = "0";
+popup.querySelector(".container").style.backgroundColor = "#f5f5f5";
+popup.querySelector(".container").style.display = "flex";
+popup.querySelector(".container").style.justifyContent = "center";
+popup.querySelector(".container").style.alignItems = "center";
+popup.querySelector(".container").style.height = "100vh";
 
-popup.style.display = "flex";
-popup.style.alignContent = "center";
-popup.style.justifyContent = "center";
-popup.style.backgroundColor = "#fff";
-popup.style.borderRadius = "6px";
-popup.style.padding = "3rem 2rem";
-popup.style.boxShadow = "0 10px 40px -14px rgba(0,0,0,0.25)";
-popup.style.textAlign = "center";
+popup.querySelector(".cookiesContent").style.width = "320px";
+popup.querySelector(".cookiesContent").style.display = "flex";
+popup.querySelector(".cookiesContent").style.flexDirection = "column";
+popup.querySelector(".cookiesContent").style.alignItems = "center";
+popup.querySelector(".cookiesContent").style.backgroundColor = "#fff";
+popup.querySelector(".cookiesContent").style.color = "#000";
+popup.querySelector(".cookiesContent").style.textAlign = "center";
+popup.querySelector(".cookiesContent").style.borderRadius = "20px";
+popup.querySelector(".cookiesContent").style.padding = "30px 30px 70px";
 
-popupContent.style.display = "flex";
-popupContent.style.flexWrap = "wrap";
-popupContent.style.flexDirection = "column";
+popup.querySelector(".close").style.width = "30px";
+popup.querySelector(".close").style.fontSize = "20px";
+popup.querySelector(".close").style.color = "#c0c5cb";
+popup.querySelector(".close").style.alignSelf = "flex-end";
+popup.querySelector(".close").style.backgroundColor = "transparent";
+popup.querySelector(".close").style.border = "none";
+popup.querySelector(".close").style.marginBottom = "10px";
 
-popupTitle.style.color = "#32325d";
-popupTitle.style.fontSize = "1.8em";
-popupTitle.style.lineHeight = "1.5em";
-popupTitle.style.fontWeight = "900";
-popupTitle.style.marginTop = "0";
+popup.querySelector("img").style.width = "82px";
+popup.querySelector("img").style.marginBottom = "15px";
 
-popupBody.style.fontSize = "1.1em";
-popupBody.style.lineHeight = "1.6em";
-popupBody.style.color = "#6b7c93";
-popupBody.style.fontWeight = "500";
-popupBody.style.marginBottom = "2.1em";
-popupBody.style.textAlign = "left";
+popup.querySelector("p").style.marginBottom = "40px";
+popup.querySelector("p").style.fontSize = "18px";
+
+popup.querySelector(".accept").style.backgroundColor = "#ed6755";
+popup.querySelector(".accept").style.border = "none";
+popup.querySelector(".accept").style.borderRadius = "5px";
+popup.querySelector(".accept").style.width = "200px";
+popup.querySelector(".accept").style.padding = "14px";
+popup.querySelector(".accept").style.fontSize = "16px";
+popup.querySelector(".accept").style.color = "white";
+popup.querySelector(".accept").style.boxShadow = "0px 6px 18px -5px rgba(237, 103, 85, 1)";
