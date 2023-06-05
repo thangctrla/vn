@@ -62,4 +62,4 @@ popup.querySelector(".accept").style.boxShadow = "0px 6px 18px -5px rgba(237, 10
 // Gán sự kiện click cho nút đóng
 popup.querySelector(".close").addEventListener("click", function () {
     popup.style.display = "none"
-})
+});
