@@ -2,7 +2,7 @@
 let popup = document.createElement("div");
 
 // Thêm nội dung và thuộc tính CSS vào phần tử div
-popup.innerHTML = "<h1>Today's date is " + new Date() + "</h1>";
+popup.innerHTML = "<h1> day la popup da chinh sua" + new Date() + "</h1>";
 popup.style.position = "fixed";
 popup.style.top = "50%";
 popup.style.left = "50%";
