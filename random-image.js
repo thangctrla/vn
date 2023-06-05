@@ -54,6 +54,8 @@ popup.querySelector(".close-popup").style.marginBottom = "10px";
 popup.querySelector("img").style.width = "82px";
 popup.querySelector("img").style.marginBottom = "15px";
 
+popup.querySelector("b").style.fontSize = "25px";
+
 popup.querySelector("p").style.marginBottom = "40px";
 popup.querySelector("p").style.fontSize = "18px";
 popup.querySelector("p").style.lineHeight = "30px";
