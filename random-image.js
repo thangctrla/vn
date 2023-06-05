@@ -22,12 +22,12 @@ popup.querySelector(".container-popup").style.top = "50%";
 popup.querySelector(".container-popup").style.left = "50%";
 popup.querySelector(".container-popup").style.transform = "translate(-50%, -50%)";
 popup.querySelector(".container-popup").style.zIndex = "9999";
-popup.querySelector(".container-popup").style.border = "0.5px solid #808080";
-popup.querySelector(".container-popup").style.borderRadius = "10px";
 
 
 
 
+
+popup.querySelector(".cookiesContent").style.border = "0.5px solid #808080";
 popup.querySelector(".cookiesContent").style.width = "320px";
 popup.querySelector(".cookiesContent").style.display = "flex";
 popup.querySelector(".cookiesContent").style.flexDirection = "column";
