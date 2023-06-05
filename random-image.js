@@ -7,7 +7,12 @@ popup.innerHTML = `
     <div class="cookiesContent" id="cookiesPopup">
       <button class="close-popup">✖</button>
       <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" />
-      <p>We use cookies for improving user experience, analytics and marketing.</p>
+     <span>
+      <b>Dịch vụ giao hàng</b>
+    <p>Đơn dưới 50k miễn phí 1.2km<br>
+      Đơn trên 100k miễn phí lên tới 3km
+    </p>
+    </span>
       <button class="accept-popup">That's fine!</button>
     </div>
   </div>
@@ -51,6 +56,7 @@ popup.querySelector("img").style.marginBottom = "15px";
 
 popup.querySelector("p").style.marginBottom = "40px";
 popup.querySelector("p").style.fontSize = "18px";
+popup.querySelector("p").style.lineHeight = "30px";
 
 popup.querySelector(".accept-popup").style.backgroundColor = "#ed6755";
 popup.querySelector(".accept-popup").style.border = "none";
