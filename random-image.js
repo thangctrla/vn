@@ -15,7 +15,7 @@ popup.innerHTML = `
     <br>Với mỗi 50k giá trị đơn hàng tiếp theo <b>miễn phí thêm</b> 1km
     </p>
     
-    <p>Ship tối thiểu: 30k</p>
+    <p>Ship đơn tối thiểu: 30k</p>
     </span><button class="accept-popup">That's fine!</button>
     </div>
   </div>
