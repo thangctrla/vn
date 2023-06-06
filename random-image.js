@@ -15,7 +15,7 @@ popup.innerHTML = `
     <br>Với mỗi 50k giá trị đơn hàng tiếp theo <b>miễn phí thêm</b> 1km
     </p>
     
-   <p>Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà họp tổ dân phố số 21</a>
+   <p>Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà văn hoá tổ dân phố 21</a>
     <br>
     Ship tối thiểu: 30k</p>
     </span><button class="accept-popup">That's fine!</button>
