@@ -82,5 +82,8 @@ popup.querySelector(".accept-popup").style.boxShadow = "0px 6px 18px -5px rgba(2
 popup.querySelector(".close-popup").addEventListener("click", function () {
     popup.style.display = "none"
 });
+popup.querySelector(".accept-popup").addEventListener("click", function () {
+    popup.style.display = "none"
+});
 
 
