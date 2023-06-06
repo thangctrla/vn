@@ -13,11 +13,11 @@ popup.innerHTML = `
     <p>
     Từ 0 => 50k: <b>Miễn phí 1.2km</b>
     <br>Với mỗi 50k giá trị đơn hàng tiếp theo <b>miễn phí thêm</b> 1km
-    <br>
-    Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà họp tổ dân phố số 21</a>
     </p>
     
-    <p>Ship tối thiểu: 30k</p>
+   <p>Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà họp tổ dân phố số 21</a>
+    <br>
+    Ship tối thiểu: 30k</p>
     </span><button class="accept-popup">That's fine!</button>
     </div>
   </div>
