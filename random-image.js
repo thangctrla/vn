@@ -18,7 +18,7 @@ popup.innerHTML = `
    <p>Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà văn hoá tổ dân phố 21</a>
     <br>
     Ship tối thiểu: 30k</p>
-    </span><button class="accept-popup">That's fine!</button>
+    </span><button class="accept-popup"> Đồng ý </button>
     </div>
   </div>
 `;
@@ -83,28 +83,4 @@ popup.querySelector(".close-popup").addEventListener("click", function () {
     popup.style.display = "none"
 });
 
-// Kiểm tra xem đã lưu trữ trạng thái của popup hay chưa
-const isPopupClosed = localStorage.getItem('popupClosed');
 
-// Kiểm tra ngày hiện tại so với ngày lưu trữ popupClosed
-const currentDate = new Date();
-const storedDate = new Date(isPopupClosed);
-const isOneDayPassed = Math.floor((currentDate - storedDate) / (24 * 60 * 60 * 1000)) >= 1;
-
-// Kiểm tra nếu popup đã được đóng và đã trôi qua ít nhất 1 ngày
-if (isPopupClosed && !isOneDayPassed) {
-  // Không hiển thị popup
-  popup.style.display = "none";
-} else {
-  // Hiển thị popup
-  popup.style.display = "block";
-}
-
-// Gán sự kiện click cho nút "That's fine!"
-popup.querySelector(".accept-popup").addEventListener("click", function() {
-  // Lưu trạng thái đã đóng popup
-  localStorage.setItem('popupClosed', new Date().toString());
-
-  // Đóng popup
-  popup.style.display = "none";
-});
