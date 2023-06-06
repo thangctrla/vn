@@ -6,14 +6,17 @@ popup.innerHTML = `
   <div class="container-popup">
     <div class="cookiesContent" id="cookiesPopup">
       <button class="close-popup">✖</button>
-      <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" />
-     <span>
+      <img src="https://cdn-icons-png.flaticon.com/512/9518/9518021.png" alt="cookies-img" />
+      <span>
       <b>Dịch vụ giao hàng</b>
-    <p>Đơn dưới 50k miễn phí 1.2km<br>
-      Đơn trên 100k miễn phí lên tới 3km
+   
+    <p>
+    Từ 0 => 50k: <b>Miễn phí 1.2km</b>
+    <br>Với mỗi 50k giá trị đơn hàng tiếp theo <b>miễn phí thêm</b> 1km
     </p>
-    </span>
-      <button class="accept-popup">That's fine!</button>
+    
+    <p>Ship tối thiểu: 30k</p>
+    </span><button class="accept-popup">That's fine!</button>
     </div>
   </div>
 `;
