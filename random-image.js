@@ -51,7 +51,7 @@ popup.querySelector(".cookiesContent").style.backgroundColor = "#fff";
 popup.querySelector(".cookiesContent").style.color = "#000";
 popup.querySelector(".cookiesContent").style.textAlign = "center";
 popup.querySelector(".cookiesContent").style.borderRadius = "20px";
-popup.querySelector(".cookiesContent").style.padding = "30px 30px";
+popup.querySelector(".cookiesContent").style.padding = "30px 30px 70px";
 
 popup.querySelector(".close-popup").style.width = "30px";
 popup.querySelector(".close-popup").style.fontSize = "20px";
@@ -78,7 +78,7 @@ popup.querySelector("a").style.color = "#ff070b";
 
 
 
-popup.querySelector("p").style.marginBottom = "10px";
+popup.querySelector("p").style.marginBottom = "40px";
 popup.querySelector("p").style.fontSize = "18px";
 popup.querySelector("p").style.lineHeight = "30px";
 popup.querySelector(".accept-popup").style.backgroundColor = "#ed6755";
