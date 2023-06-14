@@ -6,14 +6,24 @@ popup.innerHTML = `
   <div class="container-popup">
     <div class="cookiesContent" id="cookiesPopup">
       <button class="close-popup">✖</button>
-      <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" />
-     <span>
+      <img src="https://cdn-icons-png.flaticon.com/512/4477/4477205.png" alt="cookies-img" />
+      <span>
       <b>Dịch vụ giao hàng</b>
-    <p>Đơn dưới 50k miễn phí 1.2km<br>
-      Đơn trên 100k miễn phí lên tới 3km
+   
+    <p>
+    Từ 0 => 50k: <b>Miễn phí 1.2km</b>
+    <br>Mỗi 50k giá trị đơn hàng tiếp theo <b>miễn phí thêm</b> 1.0km
+    <br>
+    <span  class="note-popup">* Với km tiếp theo cửa hàng sẽ phụ thu 5k/1km</span>
     </p>
-    </span>
-      <button class="accept-popup">That's fine!</button>
+
+    
+    <p>Tính từ <a href="https://goo.gl/maps/z989yV79G56UA3D99">nhà văn hoá tổ dân phố 21</a>
+   
+    
+    <br>
+    Ship tối thiểu: 30k</p>
+    </span><button class="accept-popup">Đồng ý</button>
     </div>
   </div>
 `;
@@ -41,7 +51,7 @@ popup.querySelector(".cookiesContent").style.backgroundColor = "#fff";
 popup.querySelector(".cookiesContent").style.color = "#000";
 popup.querySelector(".cookiesContent").style.textAlign = "center";
 popup.querySelector(".cookiesContent").style.borderRadius = "20px";
-popup.querySelector(".cookiesContent").style.padding = "30px 30px 70px";
+popup.querySelector(".cookiesContent").style.padding = "30px 30px";
 
 popup.querySelector(".close-popup").style.width = "30px";
 popup.querySelector(".close-popup").style.fontSize = "20px";
@@ -51,15 +61,26 @@ popup.querySelector(".close-popup").style.backgroundColor = "transparent";
 popup.querySelector(".close-popup").style.border = "none";
 popup.querySelector(".close-popup").style.marginBottom = "10px";
 
+
+popup.querySelector(".note-popup").style.fontSize = "10px";
+popup.querySelector(".note-popup").style.color = "#838878";
+
+
+
+
 popup.querySelector("img").style.width = "82px";
 popup.querySelector("img").style.marginBottom = "15px";
 
 popup.querySelector("b").style.fontSize = "25px";
+popup.querySelector("a").style.textDecoration = "none";
+popup.querySelector("a").style.color = "#ff070b";
 
-popup.querySelector("p").style.marginBottom = "40px";
+
+
+
+popup.querySelector("p").style.marginBottom = "10px";
 popup.querySelector("p").style.fontSize = "18px";
 popup.querySelector("p").style.lineHeight = "30px";
-
 popup.querySelector(".accept-popup").style.backgroundColor = "#ed6755";
 popup.querySelector(".accept-popup").style.border = "none";
 popup.querySelector(".accept-popup").style.borderRadius = "5px";
@@ -71,31 +92,9 @@ popup.querySelector(".accept-popup").style.boxShadow = "0px 6px 18px -5px rgba(2
 
 // Gán sự kiện click cho nút đóng
 popup.querySelector(".close-popup").addEventListener("click", function () {
-    popup.style.display = "none"
+  popup.style.display = "none"
 });
-
-// Kiểm tra xem đã lưu trữ trạng thái của popup hay chưa
-const isPopupClosed = localStorage.getItem('popupClosed');
-
-// Kiểm tra ngày hiện tại so với ngày lưu trữ popupClosed
-const currentDate = new Date();
-const storedDate = new Date(isPopupClosed);
-const isOneDayPassed = Math.floor((currentDate - storedDate) / (24 * 60 * 60 * 1000)) >= 1;
-
-// Kiểm tra nếu popup đã được đóng và đã trôi qua ít nhất 1 ngày
-if (isPopupClosed && !isOneDayPassed) {
-  // Không hiển thị popup
-  popup.style.display = "none";
-} else {
-  // Hiển thị popup
-  popup.style.display = "block";
-}
-
-// Gán sự kiện click cho nút "That's fine!"
-popup.querySelector(".accept-popup").addEventListener("click", function() {
-  // Lưu trạng thái đã đóng popup
-  localStorage.setItem('popupClosed', new Date().toString());
-
-  // Đóng popup
-  popup.style.display = "none";
+// Gán sự kiện click cho nút đóng
+popup.querySelector(".accept-popup").addEventListener("click", function () {
+  popup.style.display = "none"
 });
