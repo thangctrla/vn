@@ -6,7 +6,7 @@ popup.innerHTML = `
   <div class="container-popup">
     <div class="cookiesContent" id="cookiesPopup">
       <button class="close-popup">✖</button>
-      <img src="maneki-neko.png" alt="cookies-img" />
+      <img src="./maneki-neko.png" alt="cookies-img" />
       <span>
       <b>Dịch vụ giao hàng</b>
    
